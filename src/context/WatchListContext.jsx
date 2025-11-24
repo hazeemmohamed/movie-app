@@ -5,6 +5,8 @@ export const WatchListContext = createContext();
 export function WatchListProvider({ children }) {
   const [watchList, setWatchList] = useState([]);
 
+  
+
   const addToWatchList = (movie) => {
     // avoid duplicates
     if (!watchList.find((m) => m.id === movie.id)) {
